@@ -67,9 +67,12 @@ function register_btn() {
   var email = document.getElementById("emailInput").value;
   var name  = document.getElementById("fullName").value;
   var pwd   = document.getElementById("u_pwd").value;
+  validateEmail_chg(document.getElementById("emailInput"));
+  validatePwd_chg(document.getElementById("u_pwd"));
+  validateName_chg(document.getElementById("fullName"));
   if(validateEmail(email) && validateName(name) && validatePassword(pwd)) {
     alert('Success');
   } else {
-    alert('enter');
+    //alert('Invalid');
   }
 }
