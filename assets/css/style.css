@@ -338,7 +338,7 @@ Button
   background: #2AD7BC;
   border-radius: 25px;
 }
-
+/*** Roundee Button ***/
 .ps-relative .button{
   color: #fff;
   position: absolute;
@@ -377,6 +377,7 @@ Button
 .ps-relative .button:hover:after{
   height: 100%;
 }
+/*** End Roundee Button ***/
 
 
 .input-lg, .form-group-lg .form-control {
