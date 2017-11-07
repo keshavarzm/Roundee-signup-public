@@ -77,7 +77,7 @@ a.emerald:hover {
 
 /* Portrait and Landscape */
 
-@media all and (min-width: 768px) and (max-width: 1366px) {
+@media all and (max-width: 1366px) {
   .valign82 {
     vertical-align: top;
     padding-top: 40px;
@@ -85,17 +85,51 @@ a.emerald:hover {
   .wt400 {
     margin-bottom: 2em;
   }
+  .ps-relative {
+    margin-top: 55px;
+  }
+  .charcoal {
+    margin-top: 32px;
+  }
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .ht5{
+/* Landscape */
+@media all and (max-width: 1112px) {
+    .ht5 {
       height: 3.5em;
     }
-
+    .ps-relative {
+      margin-top: 105px;
+    }
+    .charcoal {
+      font-size: 1.09em;
+    }
 }
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait */
+@media all and (max-width: 834px) {
+  td.illust {
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;  
+  }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait */
+@media all and (max-width: 768px) {
+  .ps-relative .button {
+    font-size: 18px;
+  }
+}
+
+
+
+
