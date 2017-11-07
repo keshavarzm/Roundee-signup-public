@@ -74,8 +74,6 @@ animation: 0.8s cubic-bezier(.51,.35,.32,.58) 1.7s showup;
 
 /*** End Thank you msg animation ***/
 
-.complete_msg p {
-  color: #1D2127;
-  font-size: 18px;
-  line-height: 21px;
+.complete_msg {
+  margin-top: 42px;
 }

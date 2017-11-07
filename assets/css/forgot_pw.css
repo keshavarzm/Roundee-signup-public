@@ -20,7 +20,7 @@ input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([re
 
 .illust {
   width: 30%;
-  background: url(../images/signup_illustration.png) no-repeat;
+  background: url(../images/forgotpw_illust.png) no-repeat;
   background-size: contain;
   background-position-y: 3.5em;
 }
@@ -61,41 +61,7 @@ form p {
 .emerald {
   color: #2AD7BC;
 }
-a.emerald:hover {
-  color: #2A7DD7;
-}
 .charcoal {
   color: #262C34;
   font-weight: 400;
-  margin-top: 122px;
-}
-
-
-/*** Media Query ***/
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-
-@media all and (min-width: 768px) and (max-width: 1366px) {
-  .valign82 {
-    vertical-align: top;
-    padding-top: 40px;
-  }
-  .wt400 {
-    margin-bottom: 2em;
-  }
-}
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .ht5{
-      height: 3.5em;
-    }
-
 }

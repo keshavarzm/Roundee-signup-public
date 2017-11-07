@@ -331,6 +331,7 @@ Button
 /*** Roundee Button ***/
 .ps-relative {
   position: relative;
+  margin-top: 65px;
 }
 .ps-relative a{
   text-decoration: none;
@@ -379,6 +380,21 @@ Button
 }
 /*** End Roundee Button ***/
 
+/*** Roundee Instruction Text ***/
+.inst_text {
+  color: #1D2127;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 18px;
+}
+/**** End Roundee Instruction Text **/
+
+/*** Sign up form table vertical align ***/
+.valign82 {
+    vertical-align: top;
+    padding-top: 82px;
+}
+/*** End Sign up form table vertical align ***/
 
 .input-lg, .form-group-lg .form-control {
     height: 46px;
