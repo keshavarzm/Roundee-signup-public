@@ -119,6 +119,9 @@ a.emerald:hover {
         opacity:0;
         visibility: collapse;  
   }
+  .wd25 {
+    padding-left: 0;
+  }
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -130,6 +133,14 @@ a.emerald:hover {
   }
 }
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media all and (max-width: 375px) {
+  .showhide img {
+    max-width: 60%;
+  }
+}
 
 
 
