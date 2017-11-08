@@ -1811,6 +1811,9 @@ xkeyframes
       font-size: 1.1em;
       margin-top: -4px;
     }
+    .copyright {
+      width: 100% !important;
+    }
   }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
