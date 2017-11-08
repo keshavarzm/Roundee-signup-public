@@ -1,71 +1,7 @@
-#signup_form {
-  display: flex;
-  justify-content: center;
-  height: 863px;
-}
-#signup_form tbody{
-  width: 60%;
-}
-.form_title, .fw-300 {
-  font-weight:300;
-}
-input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]) {
-  border-bottom: 1px solid #2AD7BC;
-  box-shadow: 0 1px 0 0 #2AD7BC;
-  -webkit-box-shadow: 0 1px 0 0 #2AD7BC;
-}
-input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label {
-  color: #5F6E80;
-}
 
-.illust {
-  width: 30%;
-  background: url(../images/signup_illustration.png) no-repeat;
-  background-size: contain;
-  background-position-y: 3.5em;
-}
-.wd25 {
-  width: 25%;
-  padding-left: 5em;
-}
-.ht700 {
-  height: 800px;
-}
-.ht5 {
-  height: 6.5em;
-}
-.wt400 {
-  font-weight: 400;
-  margin-bottom: 4em;
-}
-form p {
-  text-align: center;
-}
-/*** Password show/hide button ***/
-.showhide {
-  position: absolute;
-  top: 15px;
-  right: 0;
-}
-/*** Check Validation ***/
-.valid {
-  color: #E35A66;
-  display: none;
-  margin-top: -10px;
-}
-.hint {
-  color: #5F6E80;
-  display: block;
-  margin-top: -10px;
-}
-.emerald {
-  color: #2AD7BC;
-}
-a.emerald:hover {
-  color: #2A7DD7;
-}
-.charcoal {
-  color: #262C34;
-  font-weight: 400;
-  margin-top: 122px;
-}
+   .illust {
+     width: 30%;
+     background: url(../images/signup_illustration.png) no-repeat;
+     background-size: contain;
+     background-position-y: 3.5em;
+   }
