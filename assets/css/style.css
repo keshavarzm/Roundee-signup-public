@@ -1789,6 +1789,9 @@ xkeyframes
   .ps-relative .button {
     font-size: 18px;
   }
+  .inst_text {
+    font-size: 1.5em;
+  }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
