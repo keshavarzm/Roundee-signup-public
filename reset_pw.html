@@ -106,10 +106,18 @@
                   <h2 class="wt400">RESET PASSWORD</h2>
                   <p class="text-left inst_text">Enter new password below.</p>
                   <div class="md-form ht5" style="margin-top: 50px;">
-                      <input type="text" class="form-control" id="emailInput" maxlength="50">
-                      <label for="emailInput" class="fw-300">Password</label>
-                      <span id="email_valid" class="valid">Please check the email address</span>
+                      <input type="password" class="form-control" id="u_pwd" maxlength="50">
+                      <span id="pw_valid" class="hint">Minimum 8 characters including minimum one special character such as !@#$%</span>
+                        <div id="chk_pwd" class="showhide" onclick="pwd_show();">
+                          <img src="assets/images/hide_password.png" id="showhide" />
+                          <input type="hidden" id="sh" value="1">
+                        </div>
+                      <label for="password" class="fw-300">Password</label>
                   </div>
+
+
+
+
 
                   <div class="text-center ps-relative" style="height: 48px;">
                       <a href="/#" title="Get transcription" target="_blank" class="button">Reset</a>
