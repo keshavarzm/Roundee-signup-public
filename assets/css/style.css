@@ -472,6 +472,12 @@ Button
      margin-top: 122px;
    }
 
+  .display_b {
+    display: block;
+  }
+  .display_n {
+    display: none;
+  }
 
 
 /* ==========================================================================
