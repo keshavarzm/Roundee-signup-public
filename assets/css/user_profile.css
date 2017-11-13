@@ -73,7 +73,7 @@ main {
   padding: 50px;
   margin: 0 auto;
   position: absolute;
-  top: -120px;
+  top: -127px;
   left: 50%;
   margin-left: -400px;
 }
@@ -92,10 +92,11 @@ label {
   display: inline-block;
   margin: 0 0 -1px;
   padding: 15px 25px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   color: #AEBBCB;
   border: 1px solid transparent;
+  font-size: 20px;
 }
 
 label:before {
