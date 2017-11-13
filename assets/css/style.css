@@ -1868,6 +1868,14 @@ xkeyframes
   .wd25 {
     padding-left: 0 !important;
   }
+  #myacc {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .prof-img {
+    float: left !important;
+    margin: 5px 0 0 2em;
+  }
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -1886,6 +1894,13 @@ xkeyframes
   }
   .mgleft78 {
     margin-left: 0 !important;
+  }
+  .acc_bill main {
+    left: 0;
+    margin-left: 0;
+  }
+  .user-profile input {
+    font-size: 1.1em !important;
   }
 }
 
@@ -1909,6 +1924,7 @@ xkeyframes
     .complete_illust svg {
       width: 100%;
     }
+
   }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -1917,5 +1933,19 @@ xkeyframes
 @media all and (max-width: 375px) {
   .showhide img {
     max-width: 60%;
+  }
+  #myacc {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media all and (max-width: 320px) {
+  .acc_bill main {
+    padding: 2em;
+    top: -105px;
   }
 }

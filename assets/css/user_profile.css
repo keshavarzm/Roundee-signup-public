@@ -73,6 +73,7 @@ main {
   top: -127px;
   left: 50%;
   margin-left: -400px;
+  width: 100%;
 }
 
 section {
@@ -154,9 +155,9 @@ label.label-prof {
 }
 
 @media screen and (max-width: 650px) {
-  label {
+  /*label {
     font-size: 11px;
-  }
+  }*/
 
   label:before {
     margin: 0;
