@@ -50,8 +50,7 @@ html, body {
 
 body {
   font: 14px/1 'Open Sans', sans-serif;
-  color: #555;
-  background: #eee;
+  color: #262C34;
 }
 
 h1 {
@@ -64,19 +63,25 @@ p {
   margin: 0 0 20px;
   line-height: 1.5;
 }
+.acc_bill {
+  position: relative;
+}
 
 main {
   min-width: 320px;
   max-width: 800px;
   padding: 50px;
   margin: 0 auto;
-  background: #fff;
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  margin-left: -400px;
 }
 
 section {
   display: none;
   padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+  /*border-top: 1px solid #ddd;*/
 }
 
 input {
@@ -89,7 +94,7 @@ label {
   padding: 15px 25px;
   font-weight: 600;
   text-align: center;
-  color: #bbb;
+  color: #AEBBCB;
   border: 1px solid transparent;
 }
 
@@ -105,8 +110,8 @@ label:hover {
 }
 
 input:checked + label {
-  color: #555;
-  border-bottom: 2px solid orange;
+  color: #fff;
+  border-bottom: 6px solid #5AE3C6;
 }
 
 #tab1:checked ~ #content1,
