@@ -34,9 +34,6 @@ li a.cl-reset {
   border-radius: 0px;
 }
 
-// Tabs
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
 
 *, *:before, *:after {
   margin: 0;
@@ -114,12 +111,37 @@ input:checked + label {
   color: #fff;
   border-bottom: 6px solid #5AE3C6;
 }
+#myacc {
+  width: 800px;
+}
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
+
+#tab_myacc:checked ~ #myacc,
+#tab_bill:checked ~ #bill,
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4 {
   display: block;
+}
+
+.profile-img {
+  float: left;
+}
+.prof-img {
+  float: right;
+}
+.prof-img .img-up, .prof-img .img-del {
+  display: block;
+  color: #85898C;
+  height: 24px;
+  border: 0.5px solid #979797;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.prof-img .img-up {
+  padding: 5px 13px;
+}
+.prof-img .img-del {
+  padding: 5px 14px;
 }
 
 @media screen and (max-width: 650px) {
