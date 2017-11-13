@@ -139,9 +139,18 @@ input:checked + label {
 }
 .prof-img .img-up {
   padding: 5px 13px;
+  margin-bottom:4px;
 }
 .prof-img .img-del {
   padding: 5px 14px;
+}
+label.label-prof {
+  color: #5F6E80;
+  font-weight: 300;
+  font-size: 18px;
+  cursor: auto;
+  padding: 0;
+  margin: 2.1em 0 .5em 0;
 }
 
 @media screen and (max-width: 650px) {
