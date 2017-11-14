@@ -1852,6 +1852,21 @@ xkeyframes
     .wd25 {
       padding-left: 3em;
     }
+    .light {
+      top: -30em !important;
+    }
+    .light_btm {
+      right: -15vh;
+    }
+    .message {
+      position: relative;
+      top: 10em;
+      right: 7vw;
+      margin: 0 !important;
+    }
+    .message h1 {
+      font-size: 2em !important;
+    }
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
@@ -1875,6 +1890,16 @@ xkeyframes
   .prof-img {
     float: left !important;
     margin: 5px 0 0 2em;
+  }
+  .expired svg {
+    margin: 10vw 0 0 5vw;
+  }
+  .light {
+    top: -43vw !important;
+    left: -14vw;
+  }
+  .light_btm {
+    top: 14vw;
   }
 }
 
@@ -1906,6 +1931,17 @@ xkeyframes
     position: relative;
     z-index: 1;
   }
+  .light {
+    display: none;
+  }
+  .light_btm {
+    display:none;
+  }
+  .message {
+    position: static;
+    text-align: center;
+    float: none !important;
+  }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -1928,7 +1964,12 @@ xkeyframes
     .complete_illust svg {
       width: 100%;
     }
-
+    .message p {
+      font-size: 4vw !important;
+    }
+    .message h1 {
+      font-size: 5.4vw !important;
+    }
   }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
