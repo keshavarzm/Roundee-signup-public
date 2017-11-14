@@ -1902,6 +1902,10 @@ xkeyframes
   .user-profile input {
     font-size: 1.1em !important;
   }
+  .navbar-collapse {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
