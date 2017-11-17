@@ -9,11 +9,11 @@ function comeOn() {
       for( var i=0; i < 3; i++ ){
             if(i % 2){
             $elem.fadeIn(700);
-            $elem2.fadeOut(700);
+            // $elem2.fadeOut(700);
             }
             else{
             $elem.fadeOut(700);
-            $elem2.fadeIn(700);
+            $elem2.hide().delay(700).fadeIn(700);
             }
       }
 }
