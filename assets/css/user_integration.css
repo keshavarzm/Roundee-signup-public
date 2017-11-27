@@ -18,6 +18,9 @@ h1 {
   width: 100%;
   color: #73767A;
 }
+.inte_block a:hover {
+  color: #2AD7BC;
+}
 .inte_block a.inte_setting {
   display: block;
   width: 100%;
