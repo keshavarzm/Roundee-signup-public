@@ -2,15 +2,8 @@
   background: #113F83;
   height: 200px;
 }
-#user_nav .navbar-nav li a{
-  color: #AEBBCB;
-}
-#user_nav .navbar-nav li.active a{
-  color: #fff;
-}
-/*#user_nav .navbar-nav>li>a {
-  color: #fff;
-}*/
+
+
 .navbar-collapse {
   background: #113F83;
 }

@@ -710,6 +710,14 @@ textarea::-ms-input-placeholder
   margin-left: -568px;
 }
 
+/*** User Page navigation ***/
+#user_nav .navbar-nav li a{
+  color: #AEBBCB;
+}
+#user_nav .navbar-nav li.active a{
+  color: #fff;
+}
+
 /*For Home Section*/
 .home{
     background:url(../images/homebg.jpg) no-repeat center center;
