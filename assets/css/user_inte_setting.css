@@ -2,11 +2,23 @@
 section#myacc {
   display: block;
 }
-
+.sizebar {
+  position: absolute;
+  top: 4.3em;
+  color: #5F6E80;
+  size: 18px;
+}
+.total_size {
+  right: 0;
+}
+.user_left {
+  left: 97px;
+}
 /*** User Billing css ***/
 #progress {
   height: 21px;
   border-radius: 15px;
+  margin-top: 16px;
 }
 #progress-bar {
   height: 21px;
