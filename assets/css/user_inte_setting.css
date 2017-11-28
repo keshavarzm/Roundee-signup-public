@@ -1,4 +1,8 @@
 
+section#myacc {
+  display: block;
+}
+
 /*** User Billing css ***/
 #progress {
   height: 21px;
