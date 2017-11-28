@@ -43,7 +43,6 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     background: #FFF;
-    font-size: 62.5%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -53,7 +52,6 @@ html {
 
 body {
     font-weight: 400;
-    font-size: 1.6rem;
     line-height: 160%;
 }
 

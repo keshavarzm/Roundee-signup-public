@@ -910,6 +910,9 @@ textarea::-ms-input-placeholder
 #user_nav .navbar-nav li a{
   color: #AEBBCB;
 }
+#user_nav .navbar-nav li a.button {
+  color: #fff;
+}
 #user_nav .navbar-nav li.active a{
   color: #fff;
 }
