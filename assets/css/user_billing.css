@@ -23,3 +23,10 @@
 }
 
 /*** End User Billing css ***/
+
+.displayBlock {
+  display: block;
+}
+.displayNone {
+  display: none;
+}

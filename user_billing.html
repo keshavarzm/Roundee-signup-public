@@ -42,7 +42,7 @@
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     </head>
-    <body>
+    <body onload="setTab()">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -129,7 +129,7 @@
           <input id="tab_myacc" type="radio" name="tabs" checked>
           <label for="tab_myacc">My Account</label>
 
-          <input id="tab_bill" type="radio" name="tabs">
+          <input id="tab_bill" type="radio" name="tabs" >
           <label for="tab_bill">Billing</label>
 
 
@@ -254,6 +254,11 @@
         <!-- Material kit js file  -->
 	      <script src="assets/js/vendor/material.min.js"></script>
         <script src="assets/js/vendor/material-kit.js" type="text/javascript"></script>
+        <script>
+        function setTab(){
+          document.getElementById('tab_bill').checked=true;
+        }
+        </script>
 
 
     </body>

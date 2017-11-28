@@ -144,7 +144,7 @@
                                  <div class="col-md-9 offset-md-3">
                                    <div class="form-group">
                                      <label class="label-prof" for="">E-mail</label>
-                                     <input type="text" value="luke@linearhub.com" placeholder="" class="form-control" />
+                                     <input type="text" value="luke@linearhub.com" placeholder="" class="form-control" readonly />
                                    </div>
                                  </div>
                                </div>
@@ -152,7 +152,7 @@
                                  <div class="col-md-9 offset-md-3">
                                    <div class="form-group">
                                      <label class="label-prof" for="">Team Name</label>
-                                     <input type="text" value="the-last-jedi.slack.com" placeholder="" class="form-control" />
+                                     <input type="text" value="the-last-jedi.slack.com" placeholder="" class="form-control" readonly />
                                    </div>
                                  </div>
                                </div>
@@ -160,7 +160,7 @@
                                  <div class="col-md-9 offset-md-3">
                                    <div class="form-group">
                                      <label class="label-prof" for="">Type of Billing</label>
-                                     <input type="text" value="Standard" placeholder="" class="form-control" />
+                                     <input type="text" value="Standard" placeholder="" class="form-control" readonly/>
                                    </div>
                                  </div>
                                </div>
@@ -168,8 +168,8 @@
                                  <div class="col-md-9 offset-md-3">
                                    <div class="form-group" style="position: relative;">
                                        <label class="label-prof" for="">Size</label>
-                                       <span class="user_left sizebar">30 GB</span>
-                                       <span class="total_size sizebar">100 GB</span>
+                                       <span id="used_space" class="user_left sizebar">30 GB</span>
+                                       <span id="total_space" class="total_size sizebar">100 GB</span>
                                        <div id="progress" class="progress">
                                          <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
                                          <span class="sr-only">30% Complete</span>
@@ -181,7 +181,7 @@
 
 
                         <div class="text-center ps-relative col-md-9 offset-md-3" style="height: 48px;">
-                            <a href="/#" title="Get transcription" target="_blank" class="button" style="padding: 16px 15px; font-size: 1.1em; width: 157px;">Disconnect</a>
+                            <a href="javascript:void(0);" title="Get transcription" target="_blank" class="button" style="padding: 16px 15px; font-size: 1.1em; width: 157px;" onclick="setProgressBar()">Disconnect</a>
                         </div>
                     </div>
 
@@ -243,6 +243,14 @@
         <!-- Material kit js file  -->
 	      <script src="assets/js/vendor/material.min.js"></script>
         <script src="assets/js/vendor/material-kit.js" type="text/javascript"></script>
+        <script>
+        function setProgressBar(){
+          var usedSize = 80;
+          document.getElementById('progress-bar').style.width=usedSize+"%";
+          document.getElementById('used_space').innerHTML="80 GB";
+          document.getElementById('used_space').style.left=usedSize-10+"%";
+        }
+        </script>
 
 
     </body>

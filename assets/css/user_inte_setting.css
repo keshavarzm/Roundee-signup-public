@@ -9,10 +9,14 @@ section#myacc {
   size: 18px;
 }
 .total_size {
-  right: 0;
+  right: -13%;
+  top: 6em;
 }
 .user_left {
   left: 97px;
+}
+#myacc input {
+  cursor: default;
 }
 /*** User Billing css ***/
 #progress {
