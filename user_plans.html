@@ -131,7 +131,7 @@
           <div class="togglebutton">
           	<label>
               <span>Monthly</span>
-              	<input type="checkbox" checked="">
+              	<input id="choosePlan" type="checkbox" checked="" onclick="choosePlan()" />
           		<span>Yearly</span>
               <b id="yearly_promo">15% discount</b>
           	</label>
@@ -236,7 +236,18 @@
         <!-- Material kit js file  -->
 	      <script src="assets/js/vendor/material.min.js"></script>
         <script src="assets/js/vendor/material-kit.js" type="text/javascript"></script>
+        <script>
+        function choosePlan(){
+          var yearDiscount = document.getElementById('yearly_promo');
+          if (document.getElementById('choosePlan').checked) {
+              yearDiscount.style.opacity = 1;
+          } else {
+            yearDiscount.style.opacity = 0;
+          }
 
+
+        }
+        </script>
 
     </body>
 

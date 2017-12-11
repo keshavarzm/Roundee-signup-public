@@ -8,6 +8,7 @@ body {
   height:430px;
   text-align: center;
   padding-top: 20px;
+  margin-bottom: 86px;
 }
 .userplan_banner span {
   color: #2C84D3;
@@ -49,16 +50,16 @@ body {
 #yearly_promo {
   color :#1F407F;
   font-size: 20px;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
 }
-.container .row .col-6, .container .row .col-md-4  {
 
-
-}
 .container .row .col-6 .pricing_bd, .container .row .col-md-4 .pricing_bd {
   border: 1px solid #979797;
   border-radius: 8px;
   text-align: center;
   padding-top: 32px;
+  height: 408px;
 }
 .container .row .col-6 .pricing_bd h2, .container .row .col-md-4 .pricing_bd h2 {
   color :#262C34;
@@ -80,6 +81,7 @@ body {
 .container .row .col-6 ul, .container .row .col-md-4 ul {
   text-align: left;
   padding-left: 63px;
+  margin-top: 24px;
 }
 .container .row .col-6 ul li, .container .row .col-md-4 ul li {
   color: #5F6E80;
