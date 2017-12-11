@@ -39,4 +39,56 @@ body {
 }
 .userplan_banner .togglebutton label {
   margin-top: 83px;
+  position: relative;
+}
+.userplan_banner .togglebutton label b {
+  position: absolute;
+  top: 16px;
+  right: -130px;
+}
+#yearly_promo {
+  color :#1F407F;
+  font-size: 20px;
+}
+.container .row .col-6, .container .row .col-md-4  {
+
+
+}
+.container .row .col-6 .pricing_bd, .container .row .col-md-4 .pricing_bd {
+  border: 1px solid #979797;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 32px;
+}
+.container .row .col-6 .pricing_bd h2, .container .row .col-md-4 .pricing_bd h2 {
+  color :#262C34;
+  font-size: 20px;
+
+}
+.container .row .col-6 span {
+  color: #3698DC;
+  font-weight: 600;
+  font-size: 40px;
+}
+.container .row .col-6 ins {
+  display: block;
+  color: #2C84D3;
+  font-size: 11px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.container .row .col-6 ul, .container .row .col-md-4 ul {
+  text-align: left;
+  padding-left: 63px;
+}
+.container .row .col-6 ul li, .container .row .col-md-4 ul li {
+  color: #5F6E80;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+}
+.container .row .col-6 ul li span, .container .row .col-md-4 ul li span {
+  color : #3698DC;
+  font-size: 12px;
+  font-weight: 300;
 }
