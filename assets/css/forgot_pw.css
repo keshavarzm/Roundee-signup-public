@@ -1,0 +1,6 @@
+.illust {
+  width: 30%;
+  background: url(../images/forgotpw_illust.png) no-repeat;
+  background-size: contain;
+  background-position-y: 3.5em;
+}

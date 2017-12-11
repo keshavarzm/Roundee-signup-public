@@ -1,0 +1,63 @@
+.email {
+  background-color: #E8F3F7;
+  padding: 20px 0 45px 0;
+}
+.email_logo {
+  width: 173px;
+  height: 35px;
+  background: url("../images/logo_dk.png") no-repeat;
+  background-size: contain;
+  margin-left: 7.5%;
+  margin-bottom: 17px;
+}
+.email_content {
+  width: 85%;
+  background: #fff;
+  margin: 0 auto;
+  border: 1px solid #96CADB;
+  border-radius: 8px;
+  padding: 86px 0 7px 0;
+}
+.mgleft78 {
+  margin-left: 78px;
+}
+.greeting {
+  color: #459B99;
+  size: 18px;
+  /*margin: 0;*/
+  line-height: 5px;
+}
+.action {
+  color: #616E7E;
+  font-size: 32px;
+}
+.email_content p {
+  color: #616E7E;
+  font-size: 14px;
+  margin-top: 52px;
+  line-height: 16px;
+}
+.email_content .ps-relative a {
+  font-size: 1.2em;
+}
+p.expire_alert {
+  color: #459B99;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 28px;
+}
+.copyright {
+  width: 60%;
+  margin: 0 auto;
+}
+.copyright p {
+  color: #616E7E;
+  font-size: 11px;
+  line-height: 15px;
+}
+.copyright p a {
+  color: #459C99;
+  font-weight: 400;
+  text-decoration: underline;
+}

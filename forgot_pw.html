@@ -27,8 +27,8 @@
         <!--MDB css -->
         <link rel="stylesheet" href="assets/css/mdb.min.css">
 
-        <!-- Sign Up page css  -->
-        <link rel="stylesheet" href="assets/css/signup.css">
+        <!-- Forgot PW page css  -->
+        <link rel="stylesheet" href="assets/css/forgot_pw.css">
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -103,32 +103,23 @@
             <td class="illust"></td>
             <td class="wd25 valign82">
               <form>
-                  <h2 class="wt400">SIGN UP</h2>
-                  <div class="md-form ht5">
-                      <input type="text" class="form-control" id="emailInput" onchange="validateEmail_chg(this)" maxlength="50">
+                  <h2 class="wt400">FORGOT PASSWORD</h2>
+                  <p class="text-left inst_text display_b">Enter your email below to receive your password reset instructions.</p>
+                  <p class="text-left inst_text display_n">Email is sent. Please check you inbox.</p>
+                  <div class="md-form ht5 display_b" style="margin-top: 50px;">
+                      <input type="text" class="form-control" id="emailInput" maxlength="50">
                       <label for="emailInput" class="fw-300">E-mail</label>
                       <span id="email_valid" class="valid">Please check the email address</span>
                   </div>
-                  <div class="md-form ht5">
-                      <input type="text" class="form-control" id="fullName" onchange="validateName_chg(this)" maxlength="50">
-                      <label for="fullName" class="fw-300">Full Name</label>
-                      <span id="name_valid" class="valid">Name must contain only letters</span>
-                  </div>
-                  <div class="md-form ht5">
-                      <input type="password" class="form-control" id="u_pwd" onchange="validatePwd_chg(this)" maxlength="50">
-                      <span id="pw_valid" class="hint">Minimum 8 characters including minimum one special character such as !@#$%</span>
-                        <div id="chk_pwd" class="showhide" onclick="pwd_show();">
-                          <img src="assets/images/hide_password.png" id="showhide" />
-                          <input type="hidden" id="sh" value="1">
-                        </div>
-                      <label for="password" class="fw-300">Password</label>
-                  </div>
+                      <p class="text-left inst_text emerald display_n">Didn't receive it? We will send you another one.</p>
                   <div class="text-center ps-relative" style="height: 48px;">
-                      <a title="Get transcription" target="_blank" class="button" onclick="register_btn()">Sign Up</a>
+                      <a href="/#" title="Get transcription" target="_blank" class="button">Send</a>
                   </div>
-                  <p>Already have an account? <a href="">Sign In</a></p>
+
                 </form>
+
             </td>
+
           </tr>
         </tbody>
       </table>
@@ -136,7 +127,7 @@
 
         <!--Footer-->
         <footer id="footer" class="footer">
-            <!-- <div class="container">
+           <!--  <div class="container">
                 <div class="row">
                     <div class="footer-wrapper">
 
@@ -145,6 +136,14 @@
                                 <img src="assets/images/logo.png" alt="logo" />
                             </div>
                         </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="copyright">
+                                <p>Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://bootstrapthemes.co"> Bootstrap Themes </a>2016. All rights reserved.</p>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div> -->
@@ -154,6 +153,7 @@
         <div class="scrollup">
             <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
+
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>

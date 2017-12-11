@@ -1,0 +1,42 @@
+body {
+  background-color: #fff !important;
+}
+.userplan_banner {
+  margin-top: -20px;
+  background: url('../images/user_plans_banner.png') no-repeat;
+  background-size: cover;
+  height:430px;
+  text-align: center;
+  padding-top: 20px;
+}
+.userplan_banner span {
+  color: #2C84D3;
+  font-size: 18px;
+}
+.userplan_banner span a {
+  color: #2C84D3;
+  text-decoration: underline;
+}
+.userplan_banner h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #1D2126;
+  font-weight: 600;
+  margin: 78px 0 22px 0;
+}
+.userplan_banner p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.userplan_banner .togglebutton label input[type=checkbox]:checked + .toggle {
+  background-color: #68D3BC;
+}
+.userplan_banner .togglebutton label input[type=checkbox]:checked + .toggle:after {
+  border-color: #fff;
+}
+.userplan_banner .togglebutton label span {
+  color: #1D2026;
+}
+.userplan_banner .togglebutton label {
+  margin-top: 83px;
+}

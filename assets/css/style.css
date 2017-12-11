@@ -331,6 +331,7 @@ Button
 /*** Roundee Button ***/
 .ps-relative {
   position: relative;
+  margin-top: 65px;
 }
 .ps-relative a{
   text-decoration: none;
@@ -338,7 +339,9 @@ Button
   background: #2AD7BC;
   border-radius: 25px;
 }
-
+/* ==========================================================================
+    Roundee Button
+   ========================================================================== */
 .ps-relative .button{
   color: #fff;
   position: absolute;
@@ -377,6 +380,155 @@ Button
 .ps-relative .button:hover:after{
   height: 100%;
 }
+/* ==========================================================================
+    End Roundee Button
+   ========================================================================== */
+/* ==========================================================================
+   Roundee Instruction Text
+  ========================================================================== */
+.inst_text {
+  color: #1D2127;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 18px;
+}
+/* ==========================================================================
+    End Roundee Instruction Text
+   ========================================================================== */
+
+ /* ==========================================================================
+    Sign up form Table Vertical Align
+    ========================================================================== */
+.valign82 {
+    vertical-align: top;
+    padding-top: 82px;
+}
+/* ==========================================================================
+    End Sign up form Table Vertical Align
+   ========================================================================== */
+
+/* ==========================================================================
+   Profile Picture Mask
+  ========================================================================== */
+.table th.tg-yw4l img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.profile-img img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+/* ==========================================================================
+   End Profile Picture Mask
+  ========================================================================== */
+
+
+/* ==========================================================================
+    Sign up, Log in, Forgot Password form
+   ========================================================================== */
+   #signup_form {
+     display: flex;
+     justify-content: center;
+     height: 863px;
+   }
+   #signup_form tbody{
+     width: 60%;
+   }
+   .form_title, .fw-300 {
+     font-weight:300;
+   }
+   input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]) {
+     border-bottom: 1px solid #2AD7BC !important;
+     box-shadow: 0 1px 0 0 #2AD7BC !important;
+     -webkit-box-shadow: 0 1px 0 0 #2AD7BC !important;
+   }
+   input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label {
+     color: #5F6E80 !important;
+   }
+
+   .illust {
+     width: 30%;
+     background: url(../images/login_illustration.png) no-repeat;
+     background-size: contain;
+     background-position-y: 3.5em;
+   }
+   .wd25 {
+     width: 25%;
+     padding-left: 5em;
+   }
+   .ht700 {
+     height: 800px;
+   }
+   .ht5 {
+     height: 6.5em;
+   }
+   .wt400 {
+     font-weight: 400;
+     margin-bottom: 4em;
+   }
+   form p {
+     text-align: center;
+   }
+   /*** Password show/hide button ***/
+   .showhide {
+     position: absolute;
+     top: 15px;
+     right: 0;
+   }
+   /*** Check Validation ***/
+   .valid {
+     color: #E35A66;
+     display: none;
+     margin-top: -10px;
+   }
+   .hint {
+     color: #5F6E80;
+     display: block;
+     margin-top: -10px;
+   }
+   .emerald {
+     color: #2AD7BC;
+   }
+   a.emerald:hover {
+     color: #2A7DD7;
+   }
+   .charcoal {
+     color: #262C34;
+     font-weight: 400;
+     margin-top: 122px;
+   }
+
+  .display_b {
+    display: block;
+  }
+  .display_n {
+    display: none;
+  }
+
+
+/* ==========================================================================
+    End Sign up, Log in, Forgot Password form
+   ========================================================================== */
+
+/* ==========================================================================
+     User Page Breadcrumb
+  ========================================================================== */
+   .breadcrumb {
+     background-color: #fff;
+   }
+   #bill .breadcrumb li a {
+     color : #626E7E;
+     font-size: 20px;
+   }
+   .breadcrumb > li + li:before {
+      color: #CCCCCC;
+      content: "> ";
+      padding: 0 5px;
+   }
+
+/* ==========================================================================
+   End User Page Breadcrumb
+========================================================================== */
 
 
 .input-lg, .form-group-lg .form-control {
@@ -603,6 +755,17 @@ textarea::-ms-input-placeholder
   position: absolute;
   left: 50%;
   margin-left: -568px;
+}
+
+/*** User Page navigation ***/
+#user_nav .navbar-nav li a{
+  color: #AEBBCB;
+}
+#user_nav .navbar-nav li a.button {
+  color: #fff;
+}
+#user_nav .navbar-nav li.active a{
+  color: #fff;
 }
 
 /*For Home Section*/
@@ -1706,4 +1869,186 @@ xkeyframes
     margin-left: -6px;
     text-decoration: none;
 
+}
+
+
+/*** Media Query ***/
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+
+@media all and (max-width: 1366px) {
+  .valign82 {
+    vertical-align: top;
+    padding-top: 40px;
+  }
+  .wt400 {
+    margin-bottom: 2em;
+  }
+  .ps-relative {
+    margin-top: 55px;
+  }
+  .charcoal {
+    margin-top: 32px;
+  }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Landscape */
+@media all and (max-width: 1112px) {
+    .ht5 {
+      height: 3.5em;
+    }
+    .ps-relative {
+      margin-top: 105px;
+    }
+    .charcoal {
+      font-size: 1.09em;
+    }
+    .wd25 {
+      padding-left: 3em;
+    }
+    .light {
+      top: -30em !important;
+    }
+    .light_btm {
+      right: -15vh;
+    }
+    .message {
+      position: relative;
+      top: 10em;
+      right: 7vw;
+      margin: 0 !important;
+    }
+    .message h1 {
+      font-size: 2em !important;
+    }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait */
+@media all and (max-width: 834px) {
+  td.illust {
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+  }
+  .wd25 {
+    padding-left: 0 !important;
+  }
+  #myacc {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .prof-img {
+    float: left !important;
+    margin: 5px 0 0 2em;
+  }
+  .expired svg {
+    margin: 10vw 0 0 5vw;
+  }
+  .light {
+    top: -43vw !important;
+    left: -14vw;
+  }
+  .light_btm {
+    top: 14vw;
+  }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait */
+@media all and (max-width: 768px) {
+  .ps-relative .button {
+    font-size: 18px;
+  }
+  .inst_text {
+    font-size: 1.2em;
+    line-height: 1.09em;
+  }
+  .email_content {
+    padding: 86px 7.5% 7px !important;
+  }
+  .mgleft78 {
+    margin-left: 0 !important;
+  }
+  .acc_bill main {
+    left: 0;
+    margin-left: 0;
+  }
+  .user-profile input {
+    font-size: 1.1em !important;
+  }
+  .navbar-collapse {
+    position: relative;
+    z-index: 1;
+  }
+  .light {
+    display: none;
+  }
+  .light_btm {
+    display:none;
+  }
+  .message {
+    position: static;
+    text-align: center;
+    float: none !important;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media all and (max-width: 414px) {
+    .md-form label {
+      font-size: 1.3em !important;
+    }
+    .hint {
+      font-size: 1.1em;
+      margin-top: -4px;
+    }
+    .copyright {
+      width: 100% !important;
+    }
+    .complete_illust {
+      background-size: 70% !important;
+    }
+    .complete_illust svg {
+      width: 100%;
+    }
+    .message p {
+      font-size: 4vw !important;
+    }
+    .message h1 {
+      font-size: 5.4vw !important;
+    }
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media all and (max-width: 375px) {
+  .showhide img {
+    max-width: 60%;
+  }
+  #myacc {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media all and (max-width: 320px) {
+  .acc_bill main {
+    padding: 2em;
+    top: -105px;
+  }
 }

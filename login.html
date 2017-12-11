@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="assets/css/mdb.min.css">
 
         <!-- Sign Up page css  -->
-        <link rel="stylesheet" href="assets/css/signup.css">
+        <link rel="stylesheet" href="assets/css/login.css">
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -103,20 +103,15 @@
             <td class="illust"></td>
             <td class="wd25 valign82">
               <form>
-                  <h2 class="wt400">SIGN UP</h2>
+                  <h2 class="wt400">LOG IN</h2>
                   <div class="md-form ht5">
-                      <input type="text" class="form-control" id="emailInput" onchange="validateEmail_chg(this)" maxlength="50">
+                      <input type="text" class="form-control" id="emailInput" maxlength="50">
                       <label for="emailInput" class="fw-300">E-mail</label>
-                      <span id="email_valid" class="valid">Please check the email address</span>
+                      <span id="email_valid" class="valid">Please check the eamil address</span>
                   </div>
                   <div class="md-form ht5">
-                      <input type="text" class="form-control" id="fullName" onchange="validateName_chg(this)" maxlength="50">
-                      <label for="fullName" class="fw-300">Full Name</label>
-                      <span id="name_valid" class="valid">Name must contain only letters</span>
-                  </div>
-                  <div class="md-form ht5">
-                      <input type="password" class="form-control" id="u_pwd" onchange="validatePwd_chg(this)" maxlength="50">
-                      <span id="pw_valid" class="hint">Minimum 8 characters including minimum one special character such as !@#$%</span>
+                      <input type="password" class="form-control" id="u_pwd" maxlength="50">
+                      <!-- <span id="pw_valid" class="hint">Minimum 8 characters including minimum one special character such as !@#$%</span> -->
                         <div id="chk_pwd" class="showhide" onclick="pwd_show();">
                           <img src="assets/images/hide_password.png" id="showhide" />
                           <input type="hidden" id="sh" value="1">
@@ -124,9 +119,11 @@
                       <label for="password" class="fw-300">Password</label>
                   </div>
                   <div class="text-center ps-relative" style="height: 48px;">
-                      <a title="Get transcription" target="_blank" class="button" onclick="register_btn()">Sign Up</a>
+                      <a href="/#" title="Get transcription" target="_blank" class="button">Log In</a>
                   </div>
-                  <p>Already have an account? <a href="">Sign In</a></p>
+                  <p class="charcoal">
+                    <a href="" class="emerald text-center pwreset">Forgot password?</a>
+                    Don't have an account?<a href="" class="emerald"> Sign Up</a></p>
                 </form>
             </td>
           </tr>
@@ -145,6 +142,14 @@
                                 <img src="assets/images/logo.png" alt="logo" />
                             </div>
                         </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="copyright">
+                                <p>Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://bootstrapthemes.co"> Bootstrap Themes </a>2016. All rights reserved.</p>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div> -->
@@ -154,6 +159,7 @@
         <div class="scrollup">
             <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
+
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>

@@ -1,0 +1,32 @@
+
+/*** User Billing css ***/
+#progress {
+  height: 21px;
+  border-radius: 15px;
+}
+#progress-bar {
+  height: 21px;
+  border-radius: 15px;
+  background-color: #E26060;
+}
+.breadcrumb {
+  background-color: #fff;
+}
+#bill .breadcrumb li a {
+  color : #626E7E;
+  font-size: 20px;
+}
+.breadcrumb > li + li:before {
+   color: #CCCCCC;
+   content: "> ";
+   padding: 0 5px;
+}
+
+/*** End User Billing css ***/
+
+.displayBlock {
+  display: block;
+}
+.displayNone {
+  display: none;
+}

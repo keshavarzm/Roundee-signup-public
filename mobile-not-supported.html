@@ -27,8 +27,8 @@
         <!--MDB css -->
         <link rel="stylesheet" href="assets/css/mdb.min.css">
 
-        <!-- Sign Up page css  -->
-        <link rel="stylesheet" href="assets/css/signup.css">
+        <!-- Sign Up Complete page css  -->
+        <link rel="stylesheet" href="assets/css/mobile-not-supported.css">
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -95,65 +95,55 @@
             </div><!-- /.container-fluid -->
         </nav>
 
-      <!-- Sign Up Form -->
+    <!-- Link Expired -->
+    <div class="expired">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 464 390.4" style="enable-background:new 0 0 464 390.4;" xml:space="preserve">
 
-      <table id="signup_form">
-        <tbody>
-          <tr class="ht700">
-            <td class="illust"></td>
-            <td class="wd25 valign82">
-              <form>
-                  <h2 class="wt400">SIGN UP</h2>
-                  <div class="md-form ht5">
-                      <input type="text" class="form-control" id="emailInput" onchange="validateEmail_chg(this)" maxlength="50">
-                      <label for="emailInput" class="fw-300">E-mail</label>
-                      <span id="email_valid" class="valid">Please check the email address</span>
-                  </div>
-                  <div class="md-form ht5">
-                      <input type="text" class="form-control" id="fullName" onchange="validateName_chg(this)" maxlength="50">
-                      <label for="fullName" class="fw-300">Full Name</label>
-                      <span id="name_valid" class="valid">Name must contain only letters</span>
-                  </div>
-                  <div class="md-form ht5">
-                      <input type="password" class="form-control" id="u_pwd" onchange="validatePwd_chg(this)" maxlength="50">
-                      <span id="pw_valid" class="hint">Minimum 8 characters including minimum one special character such as !@#$%</span>
-                        <div id="chk_pwd" class="showhide" onclick="pwd_show();">
-                          <img src="assets/images/hide_password.png" id="showhide" />
-                          <input type="hidden" id="sh" value="1">
-                        </div>
-                      <label for="password" class="fw-300">Password</label>
-                  </div>
-                  <div class="text-center ps-relative" style="height: 48px;">
-                      <a title="Get transcription" target="_blank" class="button" onclick="register_btn()">Sign Up</a>
-                  </div>
-                  <p>Already have an account? <a href="">Sign In</a></p>
-                </form>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <circle class="st0" cx="126" cy="175.4" r="12"/>
+  <circle class="st0" cx="339" cy="175.4" r="12"/>
+  <circle class="st1" cx="232.5" cy="170.9" r="106.5"/>
+  <path class="st2" d="M126,164.4c0,0,4.5-15.4,10.5-19.6c0,0,31,0,65-26.5c0,0,110,85.9,176-30.8c0,0-33,28.6-116-41.4
+    c0,0-131-16.2-135.5,106V164.4z"/>
+  <path class="st2" d="M339,164.4c0,0,6.2-13.3-8.2-32.4l-6.3,3.9C324.5,135.9,333.5,142.9,339,164.4z"/>
+  <path class="st2" d="M247.8,45.3c0,0,47.7-5.3,76.7,53.7L247.8,45.3z"/>
+  <circle class="st2" cx="192" cy="175.4" r="9"/>
+  <circle class="st2" cx="271" cy="175.4" r="9"/>
+  <path class="st4" d="M101.4,390.1c22.1-106.8,75.7-114.1,137.1-114.1c61.4,0,104,18.8,130.1,114.1
+    C368.7,390.6,101.3,390.6,101.4,390.1z"/>
 
+  <circle id="path" class="st3 uhoh" cx="234.5" cy="230.5" r="20"/>
+  <path class="st3 smile" d="M191,214.4c-1.1-1.5,38.6,49.3,83,0"/>
+  </svg>
 
-        <!--Footer-->
-        <footer id="footer" class="footer">
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="footer-wrapper">
+  <div class="message">
+    <h1>Oh, mobile is not ready yet.</h1>
+    <p>We promise to bring you a seamless mobile experience ASAP!<br>Please allow us a little more time.<br><br><span class="use-desktop">For now, please use<br>desktop for calls.</span><br><br><span style="font-size: 6.5vw;">You're the best!</span></p>
+    <!-- <a href="" target="_blank">Go to Roundee.io</a> -->
+  </div>
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-brand">
-                                <img src="assets/images/logo.png" alt="logo" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </footer>
+  <div class="light">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+    <div class="light_btm">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+    <!-- End Link Expired  -->
 
 
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
-        </div>
+
+    <script>
+    var circle = document.getElementById('path');
+    var radius = circle.getAttribute("r");
+    var circleLength = 2 * Math.PI * radius;
+    document.getElementById("length-container").innerHTML = circleLength;
+    </script>
+
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
@@ -161,7 +151,7 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/modernizr.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/signup.js"></script>
+        <script src="assets/js/mobile-not-supported.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>

@@ -1,0 +1,45 @@
+
+section#myacc {
+  display: block;
+}
+.sizebar {
+  position: absolute;
+  top: 4.3em;
+  color: #5F6E80;
+  size: 18px;
+}
+.total_size {
+  right: -13%;
+  top: 6em;
+}
+.user_left {
+  left: 97px;
+}
+#myacc input {
+  cursor: default;
+}
+/*** User Billing css ***/
+#progress {
+  height: 21px;
+  border-radius: 15px;
+  margin-top: 16px;
+}
+#progress-bar {
+  height: 21px;
+  border-radius: 15px;
+  background-color: #E26060;
+}
+.breadcrumb {
+  background-color: #fff;
+}
+#bill .breadcrumb li a {
+  color : #626E7E;
+  font-size: 20px;
+}
+.breadcrumb > li + li:before {
+   color: #CCCCCC;
+   content: "> ";
+   padding: 0 5px;
+}
+
+/*** End User Billing css ***/
