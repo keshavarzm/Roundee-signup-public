@@ -42,7 +42,7 @@
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     </head>
-    <body>
+    <body onload="integrationLogo()">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -229,14 +229,28 @@
                   </div>
                 </div>
                 <form>
-                  <div class="row">
-                    <div class="col-6 col-md-6">.col-6</div>
-                    <div class="col-6 col-md-6">.col-6</div>
+
+                  <!-- Integration Table -->
+                  <div>
+                    <ul>
+                      <li>
+                        <div class="logo_image">
+                          <img id="teamImg" src="" alt="">
+                        </div>
+                      </li>
+                      <li>
+                        <p id="teamName"></p>
+                      </li>
+                      <li>
+                        <p id="teamSts">
+
+                        </p>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="row">
-                    <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-                    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                  </div>
+
+                  <!-- End Integration Table -->
+
 
                         <!-- Tooltip -->
                         <span tooltip="Slide to the right" flow="right">
@@ -256,11 +270,6 @@
           </section>
         </form>
         <!-- End Choose Integration Section -->
-
-
-
-
-
 
 
 
@@ -298,6 +307,11 @@
             perYrSt.innerHTML = "per month";
           }
         }
+        </script>
+        <script>
+          function integrationLogo() {
+            document.getElementById("teamImg").src ="assets/images/slack_logo.png";
+          }
         </script>
 
     </body>
