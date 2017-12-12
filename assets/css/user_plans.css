@@ -94,3 +94,49 @@ body {
   font-size: 12px;
   font-weight: 300;
 }
+section {
+  display: block !important;
+}
+/*** Choose Button ***/
+
+.choosebutton {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -65px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+
+#planButton {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #7CC5D8;
+  color: #7CC5D8;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 15px;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#planButton:hover {
+  color: white;
+  background: #7CC5D8;
+}
+
+#planButton:active {
+  letter-spacing: 1px;
+}
+
+#planButton:after {
+  content: "Choose";
+}
+/*** End Choose Button ***/
