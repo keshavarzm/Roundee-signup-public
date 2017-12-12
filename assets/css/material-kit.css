@@ -1,19 +1,19 @@
 /*!
-    
+
  =========================================================
  * Material Kit - v1.1.1.0
  =========================================================
- 
+
  * Product Page: http://www.creative-tim.com/product/material-kit
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/timcreative/material-kit/blob/master/LICENSE.md)
- 
+
  =========================================================
- 
+
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- 
+
  */
- 
+
 /* ANIMATION */
 /* SHADOWS */
 /* Shadows (from mdl http://www.getmdl.io/) */
@@ -1975,7 +1975,7 @@ legend {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.navbar .navbar-nav > li > a {
+/*.navbar .navbar-nav > li > a {
   color: inherit;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1983,7 +1983,7 @@ legend {
   font-size: 12px;
   text-transform: uppercase;
   border-radius: 3px;
-}
+}*/
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
   color: inherit;
   background-color: transparent;
@@ -2005,10 +2005,10 @@ legend {
 .navbar .navbar-nav > li.open > .dropdown-menu {
   margin-top: 0;
 }
-.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+/*.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
   color: inherit;
   background-color: rgba(255, 255, 255, 0.1);
-}
+}*/
 .navbar .navbar-nav > .disabled > a, .navbar .navbar-nav > .disabled > a:hover, .navbar .navbar-nav > .disabled > a:focus {
   color: inherit;
   background-color: transparent;
@@ -2109,10 +2109,10 @@ legend {
   font-size: 14px;
   line-height: 1.42857;
 }
-.navbar, .navbar.navbar-default {
+/*.navbar, .navbar.navbar-default {
   background-color: #9c27b0;
   color: #ffffff;
-}
+}*/
 .navbar .navbar-form .form-group input.form-control::-moz-placeholder,
 .navbar .navbar-form input.form-control::-moz-placeholder, .navbar.navbar-default .navbar-form .form-group input.form-control::-moz-placeholder,
 .navbar.navbar-default .navbar-form input.form-control::-moz-placeholder {
@@ -2131,10 +2131,10 @@ legend {
 .navbar .dropdown-menu, .navbar.navbar-default .dropdown-menu {
   border-radius: 3px !important;
 }
-.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu li > a:focus, .navbar.navbar-default .dropdown-menu li > a:hover, .navbar.navbar-default .dropdown-menu li > a:focus {
+/*.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu li > a:focus, .navbar.navbar-default .dropdown-menu li > a:hover, .navbar.navbar-default .dropdown-menu li > a:focus {
   color: #FFFFFF;
   background-color: #9c27b0;
-}
+}*/
 .navbar .dropdown-menu .active > a, .navbar.navbar-default .dropdown-menu .active > a {
   background-color: #9c27b0;
   color: #ffffff;
@@ -2383,18 +2383,18 @@ legend {
   -ms-transition: all 150ms linear;
   transition: all 150ms linear;
 }
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+/*.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-}
+}*/
 .dropdown-menu li {
   position: relative;
 }
-.dropdown-menu li a:hover,
+/*.dropdown-menu li a:hover,
 .dropdown-menu li a:focus,
 .dropdown-menu li a:active {
   background-color: #9c27b0;
   color: #FFFFFF;
-}
+}*/
 .dropdown-menu .divider {
   margin: 5px 0;
 }
