@@ -29,6 +29,7 @@ body {
   font-size: 18px;
   font-weight: 300;
 }
+/*** Toggle Button ***/
 .userplan_banner .togglebutton label input[type=checkbox]:checked + .toggle {
   background-color: #68D3BC;
 }
@@ -47,13 +48,16 @@ body {
   top: 16px;
   right: -130px;
 }
+
+
+/*** End Toggle Button ***/
 #yearly_promo {
   color :#1F407F;
   font-size: 20px;
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;
 }
-
+/*** Plans Section ***/
 .container .row .col-6 .pricing_bd, .container .row .col-md-4 .pricing_bd {
   border: 1px solid #979797;
   border-radius: 8px;
@@ -61,7 +65,7 @@ body {
   padding-top: 32px;
   height: 408px;
 }
-.container .row .col-6 .pricing_bd h2, .container .row .col-md-4 .pricing_bd h2 {
+.container .row .col-6 .pricing_bd h2, .container .row .col-md-4 .pricing_bd h2, h2 {
   color :#262C34;
   font-size: 20px;
 
@@ -97,6 +101,7 @@ body {
 section {
   display: block !important;
 }
+
 /*** Choose Button ***/
 
 .choosebutton {
@@ -109,7 +114,7 @@ section {
   text-align: center;
 }
 
-#planButton {
+#planButton1, #planButton2, #planButton3 {
   outline: none;
   height: 40px;
   text-align: center;
@@ -127,16 +132,154 @@ section {
   transition: all 0.25s ease;
 }
 
-#planButton:hover {
+#planButto1n:hover, #planButton2:hover, #planButton3:hover {
   color: white;
   background: #7CC5D8;
 }
 
-#planButton:active {
+#planButton1:active, #planButton2:active, #planButton3:active {
   letter-spacing: 1px;
 }
 
-#planButton:after {
+#planButton1:after, #planButton2:after, #planButton3:after {
   content: "Choose";
 }
 /*** End Choose Button ***/
+/*** End Plans Section ***/
+
+/*** SVG Section Devider Animation ***/
+.divider svg g {
+    stroke: #B0BBC9;
+    stroke-width: 1;
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation-name: draw;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: cubic-bezier(.62,.52,.51,.94);
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/*** End SVG Section Devider Animation ***/
+
+/*** Your Integration Section ***/
+span.your-inte {
+  font-size: 16px;
+  color: #A1ADBE;
+  font-style: italic;
+  font-weight: 300;
+}
+/*** End Your Integration Section ***/
+
+/*** Tooltip ***/
+/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative; /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none; /* opinion 2 */
+  font-size: .9em; /* opinion 3 */
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent; /* opinion 4 */
+  z-index: 1001; /* absurdity 1 */
+}
+[tooltip]::after {
+  content: attr(tooltip); /* magic! */
+
+  /* most of the rest of this is opinion */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+
+  /*
+    Let the content set the size of the tooltips
+    but this will also keep them from being obnoxious
+    */
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000; /* absurdity 2 */
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+
+
+/* FLOW: RIGHT */
+[tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333;
+  right: calc(0em - 5px);
+  transform: translate(.5em, -50%);
+}
+[tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(.5em, -50%);
+}
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+/* FX All The Things */
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="up"]:hover::before,
+[tooltip][flow^="up"]:hover::after,
+[tooltip][flow^="down"]:hover::before,
+[tooltip][flow^="down"]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after,
+[tooltip][flow^="right"]:hover::before,
+[tooltip][flow^="right"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
+
+/*** End Tooltip ***/
