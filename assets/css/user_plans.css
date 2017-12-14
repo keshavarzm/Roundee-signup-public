@@ -83,12 +83,12 @@ body {
   font-weight: 300;
   text-decoration: none;
 }
-.container .row .col-6 ul, .container .row .col-md-4 ul {
+.plan-ftrs{
   text-align: left;
   padding-left: 63px;
   margin-top: 24px;
 }
-.container .row .col-6 ul li, .container .row .col-md-4 ul li {
+.plan-ftrs li {
   color: #5F6E80;
   font-size: 12px;
   font-weight: 300;
@@ -178,7 +178,30 @@ span.your-inte {
   font-style: italic;
   font-weight: 300;
 }
-
+.app-logo {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #979797;
+  border-radius: 8px;
+}
+.label-inte {
+  color: #1D2126;
+  font-size: 16px;
+}
+.team-name {
+  color: #727679;
+  font-size: 16px;
+}
+.team-name a {
+  color: #727679;
+}
+.team-name a:hover {
+  color: #7CC5D8;
+}
+.sts-cnnt {
+  color: #50B9B6;
+  font-size: 16px;
+}
 
 /*** End Your Integration Section ***/
 
@@ -209,24 +232,26 @@ span.your-inte {
   content: attr(tooltip); /* magic! */
 
   /* most of the rest of this is opinion */
-  font-family: Helvetica, sans-serif;
-  text-align: center;
+  font-family: 'Open sans', sans-serif;
+  text-align: left;
 
   /*
     Let the content set the size of the tooltips
     but this will also keep them from being obnoxious
     */
-  min-width: 3em;
-  max-width: 21em;
-  white-space: nowrap;
+  min-width: 192px;
+  height: 109px;
+  /*max-width: 21em;*/
+  white-space: pre;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 1ch 1.5ch;
-  border-radius: .3ch;
+  border-radius: 8px;
   box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
-  background: #333;
+  background: #25C7C5;
   color: #fff;
   z-index: 1000; /* absurdity 2 */
+  line-height: 17px;
 }
 
 /* Make the tooltips respond to hover */
@@ -246,7 +271,7 @@ span.your-inte {
 [tooltip][flow^="right"]::before {
   top: 50%;
   border-left-width: 0;
-  border-right-color: #333;
+  border-right-color: #25C7C5;
   right: calc(0em - 5px);
   transform: translate(.5em, -50%);
 }

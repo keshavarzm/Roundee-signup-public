@@ -150,7 +150,7 @@
                   <div class="pricing_bd">
                     <h2>Lite</h2>
                     <span>Free</span>
-                    <ul>
+                    <ul class="plan-ftrs">
                       <li>Video meeting</li>
                       <li>Screen share</li>
                       <li>Video recording</li>
@@ -168,7 +168,7 @@
                     <h2>Standard</h2>
                     <span id="stdPrice">$142.8</span>
                     <ins id="perYrSt">per year</ins>
-                    <ul>
+                    <ul class="plan-ftrs">
                       <li><span>Lite features +</span></li>
                       <li>Scheduling</li>
                       <li>Screen share recording</li>
@@ -188,7 +188,7 @@
                     <h2>Professional</h2>
                     <span id="proPrice">$204</span>
                     <ins id="perYrPr">per year</ins>
-                    <ul>
+                    <ul class="plan-ftrs">
                       <li><span>Standard features +</span></li>
                       <li>Unlimited storage</li>
                       <li>Company branding</li>
@@ -228,6 +228,51 @@
                     <span class="your-inte">I am purchasing this plan for:</span>
                   </div>
                 </div>
+                <div class="row" style="margin-top: 64px;">
+                  <div class="col-6 col-md-4">
+                    <ul>
+                      <li style="height: 140px;"></li>
+                      <li class="label-inte" style="margin-top: 29px;">Team</li>
+                      <li class="label-inte" style="margin-top: 53px;">Status</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <ul>
+                      <li>
+                        <div class="row">
+                          <div class="col-md-6 app-logo">.col-6</div>
+                          <div class="col-md-6 col-md-offset-4 app-logo">.col-6</div>
+                        </div>
+                      </li>
+                      <li style="margin-top: 29px;">
+                        <div class="row">
+                          <div class="col-md-6 team-name">roundee.slack.com</div>
+                          <div class="col-md-6 team-name">roundee.hipchat.com</div>
+                        </div>
+                      </li>
+                      <li style="margin-top: 53px;">
+                        <div class="row">
+                          <div class="col-md-6 sts-cnnt">Connected</div>
+                          <div class="col-md-6 team-name"><a href="">Disconnected</a>
+                              <!-- Tooltip -->
+                              <span tooltip="Click to reconnect your app &#xa;in the setting page.&#xa;In order to use it with&#xa;premium features." flow="right">
+                              <svg tooltip="Starwars is on Thursday!" flow="right"  width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="pricing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                      <g id="pricing_signed_in" transform="translate(-1150.000000, -1673.000000)" fill="#5FC4C3" fill-rule="nonzero">
+                                          <g id="noun_680384_cc" transform="translate(1150.000000, 1673.000000)">
+                                              <path d="M13,6.5 C13,2.91321244 10.0867876,0 6.5,0 C2.91321244,0 0,2.91321244 0,6.5 C0,10.0867876 2.91321244,13 6.5,13 C10.0867876,13 13,10.0867876 13,6.5 Z M5.79274611,3.56994819 C5.79274611,3.18264249 6.1126943,2.8626943 6.5,2.8626943 C6.8873057,2.8626943 7.20725389,3.18264249 7.20725389,3.56994819 L7.20725389,6.38212435 C7.20725389,6.76943005 6.8873057,7.08937824 6.5,7.08937824 C6.1126943,7.08937824 5.79274611,6.76943005 5.79274611,6.38212435 L5.79274611,3.56994819 Z M5.84326425,8.90803109 C5.84326425,8.55440415 6.12953368,8.25129534 6.5,8.25129534 C6.85362694,8.25129534 7.15673575,8.53756477 7.15673575,8.90803109 C7.15673575,9.26165803 6.87046632,9.56476684 6.5,9.56476684 C6.14637306,9.56476684 5.84326425,9.27849741 5.84326425,8.90803109 Z" id="Shape"></path>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </span>
+                            <!-- End Tooltip -->
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <form>
 
                   <!-- Integration Table -->
@@ -252,19 +297,7 @@
                   <!-- End Integration Table -->
 
 
-                        <!-- Tooltip -->
-                        <span tooltip="Slide to the right" flow="right">
-                        <svg tooltip="Starwars is on Thursday!" flow="right"  width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="pricing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="pricing_signed_in" transform="translate(-1150.000000, -1673.000000)" fill="#5FC4C3" fill-rule="nonzero">
-                                    <g id="noun_680384_cc" transform="translate(1150.000000, 1673.000000)">
-                                        <path d="M13,6.5 C13,2.91321244 10.0867876,0 6.5,0 C2.91321244,0 0,2.91321244 0,6.5 C0,10.0867876 2.91321244,13 6.5,13 C10.0867876,13 13,10.0867876 13,6.5 Z M5.79274611,3.56994819 C5.79274611,3.18264249 6.1126943,2.8626943 6.5,2.8626943 C6.8873057,2.8626943 7.20725389,3.18264249 7.20725389,3.56994819 L7.20725389,6.38212435 C7.20725389,6.76943005 6.8873057,7.08937824 6.5,7.08937824 C6.1126943,7.08937824 5.79274611,6.76943005 5.79274611,6.38212435 L5.79274611,3.56994819 Z M5.84326425,8.90803109 C5.84326425,8.55440415 6.12953368,8.25129534 6.5,8.25129534 C6.85362694,8.25129534 7.15673575,8.53756477 7.15673575,8.90803109 C7.15673575,9.26165803 6.87046632,9.56476684 6.5,9.56476684 C6.14637306,9.56476684 5.84326425,9.27849741 5.84326425,8.90803109 Z" id="Shape"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                      </span>
-                      <!-- End Tooltip -->
+
                 </form>
               </div>
           </section>
