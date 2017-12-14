@@ -133,7 +133,7 @@ section {
   transition: all 0.25s ease;
 }
 
-#planButto1n:hover, #planButton2:hover, #planButton3:hover {
+#planButton1:hover, #planButton2:hover, #planButton3:hover {
   color: white;
   background: #7CC5D8;
 }
