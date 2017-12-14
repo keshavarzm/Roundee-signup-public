@@ -183,6 +183,9 @@ span.your-inte {
   height: 140px;
   border: 1px solid #979797;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .label-inte {
   color: #1D2126;
