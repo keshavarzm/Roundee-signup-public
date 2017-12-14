@@ -187,6 +187,15 @@ span.your-inte {
   justify-content: center;
   align-items: center;
 }
+.cnntd {
+  cursor: pointer;
+}
+/*.cnntd:hover {
+  border: 2px solid #96CADB;
+}*/
+.cnntd:active {
+  border: 2px solid #96CADB;
+}
 .label-inte {
   color: #1D2126;
   font-size: 16px;

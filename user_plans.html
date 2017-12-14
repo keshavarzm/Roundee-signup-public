@@ -173,8 +173,8 @@
                       <li>Scheduling</li>
                       <li>Screen share recording</li>
                       <li>30GB cloud storage</li>
-                      <li>One time automated<br/> transcription 30min</li>
-                      <li>Automated<br/> transcription 120min/mon</li>
+                      <li>One time automated</li>
+                      <li>Transcription 120min/mon</li>
                       <li>Select transcription slots</li>
                       <li>Admin reporting</li>
                     </ul>
@@ -240,10 +240,12 @@
                     <ul>
                       <li>
                         <div class="row">
-                          <div class="col-md-6 app-logo">
+                          <div class="col-md-6 app-logo cnntd" id="cnntdApp1" onclick="yourInteChosed()" onmouseout="cnntdMouseOut()">
+                              <input type="hidden" id="hi_cnntdApp1" value="0">
                               <img id="teamImg" src="" alt="">
                           </div>
-                          <div class="col-md-6 col-md-offset-4 app-logo">
+                          <div class="col-md-6 col-md-offset-4 app-logo" id="cnntdApp2" onclick="yourInteChosed2()" onmouseout="cnntdMouseOut2()">
+                            <input type="hidden" id="hi_cnntdApp2" value="0">
                             <img id="teamImg2" src="" alt="">
                           </div>
                         </div>
@@ -277,32 +279,7 @@
                     </ul>
                   </div>
                 </div>
-                <form>
 
-                  <!-- Integration Table -->
-                  <div>
-                    <ul>
-                      <li>
-                        <div class="logo_image">
-                          <img id="teamImg" src="" alt="">
-                        </div>
-                      </li>
-                      <li>
-                        <p id="teamName"></p>
-                      </li>
-                      <li>
-                        <p id="teamSts">
-
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <!-- End Integration Table -->
-
-
-
-                </form>
               </div>
           </section>
         </form>
@@ -349,6 +326,38 @@
           function integrationLogo() {
             document.getElementById("teamImg").src ="assets/images/slack_logo.png";
             document.getElementById("teamImg2").src="assets/images/hipchat_logo.png";
+          }
+        </script>
+        <script>
+          function yourInteChosed() {
+            document.getElementById("cnntdApp1").style.borderColor = "#96CADB";
+            document.getElementById("cnntdApp1").style.borderWidth = "2px";
+            document.getElementById("hi_cnntdApp1").value= 1;
+            document.getElementById("hi_cnntdApp2").value= 0;
+          }
+          function cnntdMouseOut() {
+            if(document.getElementById("hi_cnntdApp1").value== 1){
+              document.getElementById("cnntdApp1").style.borderColor = "#96CADB";
+              document.getElementById("cnntdApp1").style.borderWidth = "2px";
+            } else {
+              document.getElementById("cnntdApp1").style.borderColor = "#979797";
+              document.getElementById("cnntdApp1").style.borderWidth = "1px";
+            }
+          }
+          function yourInteChosed2() {
+            document.getElementById("cnntdApp2").style.borderColor = "#96CADB";
+            document.getElementById("cnntdApp2").style.borderWidth = "2px";
+            document.getElementById("hi_cnntdApp2").value= 1;
+            document.getElementById("hi_cnntdApp1").value= 0;
+          }
+          function cnntdMouseOut2() {
+            if(document.getElementById("hi_cnntdApp2").value== 1){
+              document.getElementById("cnntdApp2").style.borderColor = "#96CADB";
+              document.getElementById("cnntdApp2").style.borderWidth = "2px";
+            } else {
+              document.getElementById("cnntdApp2").style.borderColor = "#979797";
+              document.getElementById("cnntdApp2").style.borderWidth = "1px";
+            }
           }
         </script>
 
