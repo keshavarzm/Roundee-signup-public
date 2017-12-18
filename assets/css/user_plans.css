@@ -214,6 +214,71 @@ span.your-inte {
   color: #50B9B6;
   font-size: 16px;
 }
+/*------------------------------------
+Do it again
+-------------------------------------*/
+.app-logo-group {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-evenly;
+}
+.media-app-logo, .media-app-logo-off {
+  position: relative;
+}
+.media-app-logo span, .media-app-logo-off span {
+  display: block;
+  width: 140px;
+  height: 27px;
+  background-color: #96CADB;
+  border-radius: 4px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.media-app-logo-off span{
+  background-color: #979797;
+}
+.team-name {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.tn {
+  width: 140px;
+}
+.tn ul li {
+  line-height: 22px;
+}
+.dblock {
+  display:none;
+}
+
+@media screen and (max-width: 414px) {
+  .team-name {
+    display: none;
+  }
+}
+
+/*------------------------------------
+Do it again
+-------------------------------------*/
+
 
 /*** End Your Integration Section ***/
 
