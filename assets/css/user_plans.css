@@ -265,6 +265,9 @@ Do it again
 .tn ul li {
   line-height: 22px;
 }
+.tn ul li:first-child {
+  color: #1D2126;
+}
 .dblock {
   display:none;
 }
