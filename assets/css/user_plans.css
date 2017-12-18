@@ -217,6 +217,38 @@ span.your-inte {
 
 /*** End Your Integration Section ***/
 
+/*** Check Out Section ***/
+.checkout-form {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  width: 100%;
+}
+.card-info {
+  width: 60%;
+  height: 330px;
+  border: 1px solid pink;
+}
+.pay-summary {
+  width: 40%;
+  height: 330px;
+  border: 1px solid salmon;
+}
+
+@media (max-width: 768px) {
+  .card-info {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .pay-summary {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+/*** End Check Out Section ***/
+
 /*** Tooltip ***/
 /* START TOOLTIP STYLES */
 [tooltip] {
