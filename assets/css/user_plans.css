@@ -172,12 +172,6 @@ section {
 /*** End SVG Section Devider Animation ***/
 
 /*** Your Integration Section ***/
-span.your-inte {
-  font-size: 16px;
-  color: #A1ADBE;
-  font-style: italic;
-  font-weight: 300;
-}
 .app-logo {
   width: 140px;
   height: 140px;
@@ -187,36 +181,6 @@ span.your-inte {
   justify-content: center;
   align-items: center;
 }
-.cnntd {
-  cursor: pointer;
-}
-/*.cnntd:hover {
-  border: 2px solid #96CADB;
-}*/
-.cnntd:active {
-  border: 2px solid #96CADB;
-}
-.label-inte {
-  color: #1D2126;
-  font-size: 16px;
-}
-.team-name {
-  color: #727679;
-  font-size: 16px;
-}
-.team-name a {
-  color: #727679;
-}
-.team-name a:hover {
-  color: #7CC5D8;
-}
-.sts-cnnt {
-  color: #50B9B6;
-  font-size: 16px;
-}
-/*------------------------------------
-Do it again
--------------------------------------*/
 .app-logo-group {
   display:-webkit-box;
   display:-ms-flexbox;
@@ -264,6 +228,7 @@ Do it again
 }
 .tn ul li {
   line-height: 22px;
+  color: #727679;
 }
 .tn ul li:first-child {
   color: #1D2126;
@@ -277,12 +242,6 @@ Do it again
     display: none;
   }
 }
-
-/*------------------------------------
-Do it again
--------------------------------------*/
-
-
 /*** End Your Integration Section ***/
 
 /*** Check Out Section ***/
