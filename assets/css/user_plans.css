@@ -172,7 +172,7 @@ section {
 /*** End SVG Section Devider Animation ***/
 
 /*** Your Integration Section ***/
-.app-logo {
+/* .app-logo {
   width: 140px;
   height: 140px;
   border: 1px solid #979797;
@@ -180,7 +180,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 .app-logo-group {
   display:-webkit-box;
   display:-ms-flexbox;
@@ -191,9 +191,11 @@ section {
   margin: 0 10%;
   justify-content: space-evenly;
 }
+/*
 .media-app-logo, .media-app-logo-off {
   position: relative;
 }
+*/
 .media-app-logo span, .media-app-logo-off span {
   display: block;
   width: 140px;
@@ -211,7 +213,7 @@ section {
 }
 .media-app-logo-off span{
   background-color: #979797;
-}
+} 
 .team-name {
   display:-webkit-box;
   display:-ms-flexbox;
@@ -233,9 +235,9 @@ section {
 .tn ul li:first-child {
   color: #1D2126;
 }
-.dblock {
+/* .dblock {
   display:none;
-}
+} */
 
 @media screen and (max-width: 414px) {
   .team-name {
